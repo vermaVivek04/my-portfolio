@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamStarter — Build, Learn & Win Together | Vivek Verma</title>
+    <meta name="description"
+        content="Join Vivek Verma's elite team to learn cutting-edge tech, dominate hackathons, and launch a SaaS startup together.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Aurora Background -->
+    <div class="aurora-bg">
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="aurora aurora-3"></div>
+    </div>
+
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+
+    <!-- Floating Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-glow"></div>
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Team<span class="highlight">Starter</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#vision" data-text="Vision">Vision</a></li>
+                <li><a href="#skills" data-text="Stack">Stack</a></li>
+                <li><a href="#roadmap" data-text="Roadmap">Roadmap</a></li>
+                <li><a href="#join" class="nav-cta magnetic-btn">
+                        <span>Join Us</span>
+                        <div class="btn-glow"></div>
+                    </a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <!-- Profile Picture -->
+            <div class="profile-wrapper" data-tilt data-tilt-max="15">
+                <div class="profile-ring"></div>
+                <div class="profile-ring ring-2"></div>
+                <div class="profile-glow"></div>
+                <img src="profile.jpeg" alt="Vivek Verma" class="profile-img" id="profile-img">
+                <div class="profile-status">
+                    <span class="status-dot"></span>
+                    Open to Collaborate
+                </div>
+            </div>
+
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                <span class="badge-icon">🔥</span>
+                Looking for Co-Builders — Not Just Coders
+            </div>
+
+            <h1 class="glitch-text" data-text="Learn. Build. Win. Launch.">
+                <span class="hero-line line-reveal">Learn. Build.</span>
+                <span class="hero-line line-reveal gradient-text">Win. Launch.</span>
+            </h1>
+
+            <div class="typewriter-container">
+                <p class="hero-subtitle">
+                    I'm <strong class="name-highlight">Vivek Verma</strong> —
+                    <span id="typewriter" class="typewriter-text"></span>
+                    <span class="cursor-blink">|</span>
+                </p>
+            </div>
+
+            <p class="hero-description fade-in-text">
+                I'm building an elite team of developers who want to learn cutting-edge tech together,
+                compete and win hackathons, and ultimately launch a SaaS product. If you have the hunger
+                to build something massive — <span class="text-glow">let's create history together</span>.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#join" class="btn btn-primary magnetic-btn">
+                    <span class="btn-content">
+                        <span>Join the Team</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                    <div class="btn-shimmer"></div>
+                </a>
+                <a href="#vision" class="btn btn-glass magnetic-btn">
+                    <span class="btn-content">
+                        <span>Explore Vision</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M5 12l7 7 7-7" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-card glass-card">
+                    <span class="stat-number counter" data-target="3">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Tech Stacks</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card glass-card">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Possibilities</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card glass-card">
+                    <span class="stat-number counter" data-target="1">0</span>
+                    <span class="stat-label">Mission</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span class="tag-dot"></span> WHO AM I</span>
+                <h2 class="split-text">Meet <span class="gradient-text">Vivek Verma</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card main-card glass-card glow-border" data-tilt data-tilt-max="5">
+                    <div class="card-shine"></div>
+                    <div class="card-icon-wrap">
+                        <span class="card-icon">👨‍💻</span>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Full-Stack Developer & Builder</h3>
+                    <p>
+                        I don't just write code — I build products. With deep expertise in the MERN stack,
+                        enterprise-grade Java backends, and now exploring Agentic AI, I'm at the intersection
+                        of multiple technologies. My goal isn't just another job — it's to
+                        <strong>launch impactful products</strong> that solve real problems.
+                    </p>
+                    <div class="card-tags">
+                        <span class="card-tag">React</span>
+                        <span class="card-tag">Node.js</span>
+                        <span class="card-tag">Java</span>
+                        <span class="card-tag">AI/ML</span>
+                    </div>
+                </div>
+                <div class="about-card glass-card glow-border" data-tilt data-tilt-max="8">
+                    <div class="card-shine"></div>
+                    <div class="card-icon-wrap">
+                        <span class="card-icon">🧠</span>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Mindset</h3>
+                    <p>Build in public. Fail fast. Learn faster. I'm looking for teammates who share this relentless
+                        growth mentality.</p>
+                </div>
+                <div class="about-card glass-card glow-border" data-tilt data-tilt-max="8">
+                    <div class="card-shine"></div>
+                    <div class="card-icon-wrap">
+                        <span class="card-icon">🎯</span>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Focus</h3>
+                    <p>Hackathons, open-source, SaaS — these aren't just buzzwords. They're my daily action plan and
+                        everything I'm building towards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span class="tag-dot"></span> THE PLAN</span>
+                <h2 class="split-text">What We'll Do <span class="gradient-text">Together</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="vision-grid">
+                <div class="vision-card glass-card glow-border" data-tilt data-tilt-max="6" data-step="01">
+                    <div class="card-shine"></div>
+                    <div class="vision-number">01</div>
+                    <div class="vision-icon-wrap">
+                        <div class="vision-icon">📚</div>
+                    </div>
+                    <h3>Learn Together</h3>
+                    <p>Daily and weekly sessions where we teach each other. DSA, System Design, AI/ML,
+                        Cloud — whatever pushes us forward. Not competition — pure collaboration.</p>
+                    <div class="vision-tags">
+                        <span>Peer Learning</span>
+                        <span>Code Reviews</span>
+                        <span>Knowledge Sharing</span>
+                    </div>
+                </div>
+                <div class="vision-card glass-card glow-border" data-tilt data-tilt-max="6" data-step="02">
+                    <div class="card-shine"></div>
+                    <div class="vision-number">02</div>
+                    <div class="vision-icon-wrap">
+                        <div class="vision-icon">🏆</div>
+                    </div>
+                    <h3>Dominate Hackathons</h3>
+                    <p>We'll compete in national and international hackathons as a team.
+                        Strategy, execution, presentation — all planned together. Target: podium finishes.</p>
+                    <div class="vision-tags">
+                        <span>MLH Hacks</span>
+                        <span>Smart India</span>
+                        <span>DevPost</span>
+                    </div>
+                </div>
+                <div class="vision-card glass-card glow-border" data-tilt data-tilt-max="6" data-step="03">
+                    <div class="card-shine"></div>
+                    <div class="vision-number">03</div>
+                    <div class="vision-icon-wrap">
+                        <div class="vision-icon">🚀</div>
+                    </div>
+                    <h3>Build & Ship Products</h3>
+                    <p>Not just practice — real products. We'll find pain points, build MVPs,
+                        acquire users, and generate revenue. Real startups, built on our terms.</p>
+                    <div class="vision-tags">
+                        <span>MVP</span>
+                        <span>Product Hunt</span>
+                        <span>Users</span>
+                    </div>
+                </div>
+                <div class="vision-card glass-card glow-border featured-card" data-tilt data-tilt-max="6"
+                    data-step="04">
+                    <div class="card-shine"></div>
+                    <div class="vision-number">04</div>
+                    <div class="vision-icon-wrap">
+                        <div class="vision-icon">💰</div>
+                    </div>
+                    <h3>Launch Our SaaS Company</h3>
+                    <p>The endgame: build a profitable SaaS business together. Engineering + business
+                        + marketing — all team effort. Dream big, start small, scale fast.</p>
+                    <div class="vision-tags">
+                        <span>Startup</span>
+                        <span>Scale</span>
+                        <span>Revenue</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span class="tag-dot"></span> TECH ARSENAL</span>
+                <h2 class="split-text">Our Tech <span class="gradient-text">Stack</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-showcase">
+                <div class="skill-card-v2 glass-card glow-border" data-tilt data-tilt-max="10">
+                    <div class="card-shine"></div>
+                    <div class="skill-icon-ring">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20M2 12h20" />
+                        </svg>
+                    </div>
+                    <h3>MERN Stack</h3>
+                    <p>MongoDB • Express.js • React.js • Node.js — The complete full-stack web development package</p>
+                    <div class="skill-meter">
+                        <div class="skill-meter-fill" data-width="90">
+                            <div class="meter-glow"></div>
+                        </div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card-v2 glass-card glow-border" data-tilt data-tilt-max="10">
+                    <div class="card-shine"></div>
+                    <div class="skill-icon-ring">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Enterprise backends • Spring Boot • Microservices • System architecture that scales</p>
+                    <div class="skill-meter">
+                        <div class="skill-meter-fill" data-width="85">
+                            <div class="meter-glow"></div>
+                        </div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card-v2 glass-card glow-border" data-tilt data-tilt-max="10">
+                    <div class="card-shine"></div>
+                    <div class="skill-icon-ring">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2a10 10 0 1 0 10 10" />
+                            <path d="M12 2v10l7-4" />
+                            <circle cx="19" cy="5" r="3" />
+                        </svg>
+                    </div>
+                    <h3>Agentic AI</h3>
+                    <p>Autonomous AI agents • LLM-powered apps • Intelligent automation — Building the future</p>
+                    <div class="skill-meter">
+                        <div class="skill-meter-fill" data-width="75">
+                            <div class="meter-glow"></div>
+                        </div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-card-v2 glass-card glow-border" data-tilt data-tilt-max="10">
+                    <div class="card-shine"></div>
+                    <div class="skill-icon-ring">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M3 9h18M9 21V9" />
+                        </svg>
+                    </div>
+                    <h3>DSA & System Design</h3>
+                    <p>Data Structures • Algorithms • Scalable system architecture — Strong fundamentals</p>
+                    <div class="skill-meter">
+                        <div class="skill-meter-fill" data-width="80">
+                            <div class="meter-glow"></div>
+                        </div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Should Join -->
+    <section id="who-join">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span class="tag-dot"></span> WHO SHOULD JOIN</span>
+                <h2 class="split-text">We're Looking <span class="gradient-text">For You</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="traits-grid">
+                <div class="trait-card glass-card glow-border">
+                    <div class="card-shine"></div>
+                    <span class="trait-emoji-wrap"><span class="trait-emoji">🔥</span></span>
+                    <h4>Hunger & Passion</h4>
+                    <p>You're not here just to learn — you're here to build something real and prove yourself</p>
+                </div>
+                <div class="trait-card glass-card glow-border">
+                    <div class="card-shine"></div>
+                    <span class="trait-emoji-wrap"><span class="trait-emoji">🤝</span></span>
+                    <h4>Team Player</h4>
+                    <p>Drop the ego, sync with the team. Collaboration beats competition every time</p>
+                </div>
+                <div class="trait-card glass-card glow-border">
+                    <div class="card-shine"></div>
+                    <span class="trait-emoji-wrap"><span class="trait-emoji">💻</span></span>
+                    <h4>Any Tech Stack</h4>
+                    <p>Frontend, backend, AI/ML, design — every skill is welcome and valued here</p>
+                </div>
+                <div class="trait-card glass-card glow-border">
+                    <div class="card-shine"></div>
+                    <span class="trait-emoji-wrap"><span class="trait-emoji">📈</span></span>
+                    <h4>Growth Mindset</h4>
+                    <p>Get 1% better every single day. Consistency always beats intensity</p>
+                </div>
+                <div class="trait-card glass-card glow-border">
+                    <div class="card-shine"></div>
+                    <span class="trait-emoji-wrap"><span class="trait-emoji">🎯</span></span>
+                    <h4>Fully Committed</h4>
+                    <p>No half-measures. We need people who are seriously invested in the mission</p>
+                </div>
+                <div class="trait-card glass-card glow-border">
+                    <div class="card-shine"></div>
+                    <span class="trait-emoji-wrap"><span class="trait-emoji">💡</span></span>
+                    <h4>Creative Thinker</h4>
+                    <p>Think outside the box. Turn problems into opportunities and ideas into reality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span class="tag-dot"></span> THE JOURNEY</span>
+                <h2 class="split-text">Our <span class="gradient-text">Roadmap</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="roadmap-timeline">
+                <div class="timeline-track"></div>
+                <div class="timeline-progress" id="timeline-progress"></div>
+
+                <div class="roadmap-item active" data-phase="1">
+                    <div class="roadmap-dot">
+                        <div class="dot-ring"></div>
+                        <div class="dot-core"></div>
+                    </div>
+                    <div class="roadmap-card glass-card glow-border" data-tilt data-tilt-max="5">
+                        <div class="card-shine"></div>
+                        <div class="phase-badge active-badge">Phase 01 — Now</div>
+                        <h3>🧩 Team Formation</h3>
+                        <ul>
+                            <li>Find passionate team members worldwide</li>
+                            <li>Identify each member's superpowers</li>
+                            <li>Set up Discord/Slack communication</li>
+                            <li>Define weekly learning objectives</li>
+                        </ul>
+                        <div class="phase-indicator">
+                            <div class="indicator-pulse"></div>
+                            <span>Currently Active</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="roadmap-item" data-phase="2">
+                    <div class="roadmap-dot">
+                        <div class="dot-ring"></div>
+                        <div class="dot-core"></div>
+                    </div>
+                    <div class="roadmap-card glass-card glow-border" data-tilt data-tilt-max="5">
+                        <div class="card-shine"></div>
+                        <div class="phase-badge">Phase 02</div>
+                        <h3>📚 Skill Building</h3>
+                        <ul>
+                            <li>Daily coding & pair programming</li>
+                            <li>Project-based collaborative learning</li>
+                            <li>Weekly tech talks & knowledge sessions</li>
+                            <li>Build impressive portfolio projects</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-item" data-phase="3">
+                    <div class="roadmap-dot">
+                        <div class="dot-ring"></div>
+                        <div class="dot-core"></div>
+                    </div>
+                    <div class="roadmap-card glass-card glow-border" data-tilt data-tilt-max="5">
+                        <div class="card-shine"></div>
+                        <div class="phase-badge">Phase 03</div>
+                        <h3>🏆 Hackathon Domination</h3>
+                        <ul>
+                            <li>Compete in 5+ major hackathons</li>
+                            <li>Win prizes & build industry reputation</li>
+                            <li>Network with top developers & founders</li>
+                            <li>Gain real-world battle experience</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-item" data-phase="4">
+                    <div class="roadmap-dot">
+                        <div class="dot-ring"></div>
+                        <div class="dot-core"></div>
+                    </div>
+                    <div class="roadmap-card glass-card glow-border" data-tilt data-tilt-max="5">
+                        <div class="card-shine"></div>
+                        <div class="phase-badge final-badge">Phase 04 — Endgame</div>
+                        <h3>🚀 SaaS Launch</h3>
+                        <ul>
+                            <li>Ideate & validate our SaaS concept</li>
+                            <li>Build MVP & onboard beta users</li>
+                            <li>Launch on Product Hunt & scale</li>
+                            <li>Generate first revenue 💸</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join / Google Form Section -->
+    <section id="join">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><span class="tag-dot"></span> READY?</span>
+                <h2 class="split-text">Join the <span class="gradient-text">Movement</span></h2>
+                <div class="section-line"></div>
+                <p class="section-description">
+                    If you think you have what it takes to be part of this team — fill out the form below.
+                    I read every single response personally. Let's build something <strong
+                        class="text-glow">legendary</strong> together. 🚀
+                </p>
+            </div>
+            <div class="form-wrapper glass-card glow-border">
+                <div class="form-header">
+                    <div class="form-dots">
+                        <span class="form-dot red"></span>
+                        <span class="form-dot yellow"></span>
+                        <span class="form-dot green"></span>
+                    </div>
+                    <span class="form-title">application_form.exe</span>
+                </div>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdVWA63Ikb9c76Oj_z5lzDnqC66kiPatwpAL0w933e0ZYxPfA/viewform?embedded=true"
+                    width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" id="google-form"
+                    title="Join the Team Application">Loading form…</iframe>
+                <div class="form-fallback">
+                    <p>Form not loading?
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVWA63Ikb9c76Oj_z5lzDnqC66kiPatwpAL0w933e0ZYxPfA/viewform"
+                            target="_blank" rel="noopener">
+                            Open in new tab ↗
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Team<span class="highlight">Starter</span></span>
+                    </a>
+                    <p class="footer-tagline">Building the future, one line of code at a time.</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank" aria-label="GitHub" class="social-link magnetic-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" aria-label="LinkedIn" class="social-link magnetic-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Twitter/X" class="social-link magnetic-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <a href="#about">About</a>
+                        <a href="#vision">Vision</a>
+                        <a href="#skills">Tech Stack</a>
+                        <a href="#roadmap">Roadmap</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Join Us</h4>
+                        <a href="#who-join">Requirements</a>
+                        <a href="#join">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <p>© 2026 TeamStarter — Crafted with 💛 by <strong>Vivek Verma</strong>. Everything is possible with the
+                    right team.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
